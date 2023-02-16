@@ -80,6 +80,7 @@ details {
   }
   .wrapper .header h3 {
     font-size: 12px;
+    
   }
   .wrapper .header h4 {
     font-size: 10px !important;
