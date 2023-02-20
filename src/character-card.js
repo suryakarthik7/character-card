@@ -1,5 +1,7 @@
 import { LitElement, html, css } from 'lit';
 
+import "@lrnwebcomponents/meme-maker/meme-maker.js";
+
 const playerPic = new URL('../assets/lebron.jpg', import.meta.url).href;
 export class CharacterCard extends LitElement {
   static properties = {
@@ -102,7 +104,15 @@ details {
 
 <div class="wrapper">
   <div class="container">
-  <img class="image" src="${playerPic}"/>
+  <meme-maker image-url="${playerPic}"
+  top-text="LEBRON"
+  bottom-text = "THE GOAT"
+  font-size= "28px">
+  </meme-maker>
+  
+  
+  
+
   <div class="header">
     <h3>Lebron James</h3>
     <h4>Basketball Player</h4>
