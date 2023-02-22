@@ -4,10 +4,33 @@ import "@lrnwebcomponents/meme-maker/meme-maker.js";
 
 const playerPic = new URL('../assets/lebron.jpg', import.meta.url).href;
 export class CharacterCard extends LitElement {
-  static properties = {
-    version: {},
-  };
+  static get properties() {
+    return {
+      Name: {
+        type: String, 
+      }, 
+      Details: {
+        type: String,
+      },
 
+      topText: {
+        type: String, 
+      },
+
+      bottomText: {
+        type: String,
+      },
+
+      subtitle: {
+        type: String, 
+      },
+
+      img: {
+        type: String,  
+      },
+      
+    }
+  }
   static get styles(){
     return css`
     .wrapper {
